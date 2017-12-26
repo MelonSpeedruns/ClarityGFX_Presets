@@ -5,10 +5,6 @@
   <a>{{ preset.description }}</a>
   <br>
   <br>
-    <img src="{{ preset.screenshot1 }}"/>
-    <img src="{{ preset.screenshot2 }}"/>
-    <img src="{{ preset.screenshot3 }}"/>
-    <img src="{{ preset.screenshot4 }}"/>
-    <img src="{{ preset.screenshot5 }}"/>
+    <img src="{{ preset.screenshot }}"/>
 {% endfor %}
 </ul>
