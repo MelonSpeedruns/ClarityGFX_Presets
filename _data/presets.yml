@@ -1,7 +1,11 @@
 - creator: Crementif
   name: Test Preset 2
   description: BlahBlahBlahBlahBlahBlahBlah
-  screenshot: https://cdn.discordapp.com/attachments/342091935277645824/395262416017031168/blarg.png
+  screenshots:
+    - https://cdn.discordapp.com/attachments/342091935277645824/395262416017031168/blarg.png
+    - https://cdn.discordapp.com/attachments/342091935277645824/395262416017031168/blarg.png
+    - https://cdn.discordapp.com/attachments/342091935277645824/395262416017031168/blarg.png
+    - https://cdn.discordapp.com/attachments/342091935277645824/395262416017031168/blarg.png
   download: https://cdn.discordapp.com/attachments/342091935277645824/395262543041527818/test.zip
 
 - creator: don't recall
