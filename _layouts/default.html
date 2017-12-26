@@ -7,8 +7,6 @@
 {% seo %}
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/simple-slider/1.0.0/simpleslider.min.js"></script>
-	<script src="https://prinzhorn.github.io/0/0.js"></script>
     <script src="{{ '/assets/js/respond.js' | relative_url }}"></script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -47,6 +45,8 @@
          		<a href="{{screenshot | default: http://ontwerpblik.nl/wp-content/uploads/404-gif.gif}}" rel="0"><img alt="Screenshot of {{preset.creator}}'s {{preset.name}}" src="{{ screenshot | default: http://ontwerpblik.nl/wp-content/uploads/404-gif.gif }}"/></a>
 			{% endfor %}
 			</div>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/simple-slider/1.0.0/simpleslider.min.js"></script>
+			<script src="https://prinzhorn.github.io/0/0.js"></script>
 			<script>
     			var imgSlider = simpleslider.getSlider({container: document.getElementById("slider{{preset.name | slugify}}"), prop: 'left', init: -650, show: 0, end: 366, unit: 'px'});
 			</script>
