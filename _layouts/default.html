@@ -40,17 +40,18 @@
           <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
         </div>
 
-        <ul>
+        <main>
           {% for preset in site.data.presets %}
             <h1>{{ preset.name | default: Preset doesn't have a name }}</h1>
             <h3>Created by: {{ preset.creator | default: Creator not specified }}</h3>
             <a>{{ preset.description | default: No description available }}</a>
-         	<br><br>
+         	<br><br><div class="slider"><figure>
 			{% for screenshot in preset.screenshots %}
          		<img alt="Screenshot of {{preset.creator}}'s {{preset.name}}" src="{{ screenshot | default: http://ontwerpblik.nl/wp-content/uploads/404-gif.gif }}"/>
 			{% endfor %}
+			</figure></div>
            {% endfor %}
-         </ul>
+         </main>
 
       </section>
 
