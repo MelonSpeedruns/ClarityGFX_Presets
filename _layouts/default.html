@@ -47,14 +47,13 @@
 			{% for screenshot in preset.screenshots %}
          		<a href="{{screenshot | default: http://ontwerpblik.nl/wp-content/uploads/404-gif.gif}}" rel="0"><img alt="Screenshot of {{preset.creator}}'s {{preset.name}}" src="{{ screenshot | default: http://ontwerpblik.nl/wp-content/uploads/404-gif.gif }}"/></a>
 			{% endfor %}
-			</div><br>
-			<li class="downloads"><a href="{{preset.download}}" style="color:white;">Download {{ preset.name }}</a></li>
+			</div>
+			<li class="downloads" style="padding: 25px 0px"><a href="{{preset.download}}" style="color:white;">Download {{ preset.name }}</a></li>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/simple-slider/1.0.0/simpleslider.min.js"></script>
 			<script src="https://prinzhorn.github.io/0/0.js"></script>
 			<script>
     			var imgSlider = simpleslider.getSlider({container: document.getElementById("slider{{preset.name | slugify}}"), show: 0, delay: 6});
 			</script>
-		<br><br>
            {% endfor %}
          </main>
 
