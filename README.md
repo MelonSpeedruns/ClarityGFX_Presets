@@ -1,3 +1,3 @@
 # A repository to find the best ClarityGFX Presets!
 
-{% include gallery.html  gallery=1 %}
+![image-title-here](images/blarg.png){:class="img-responsive"}
