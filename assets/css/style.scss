@@ -10,17 +10,17 @@
   100% { left: -400%; }
 }
 
-body {
+main {
   margin: 0;
 }
-.slider {
+div.slider {
   overflow: hidden;
 }
-.slider figure img {
+div.slider figure img {
   width: 100%;
   float: left;
 }
-.slider figure { 
+div.slider figure { 
   position: relative;
   width: 100%;
   margin: 0;
