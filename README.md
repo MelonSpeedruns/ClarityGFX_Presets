@@ -6,8 +6,6 @@
   <br>
   <br>
     <img src="{{ preset.screenshot }}"/>
-  <form action="{{ preset.download }}">
-    <input type="submit" value="Download!" />
-  </form>
+  [Download!]({{ preset.download }}){: .btn}
 {% endfor %}
 </ul>
