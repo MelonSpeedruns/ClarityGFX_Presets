@@ -1,8 +1,8 @@
 <ul>
-{% for member in site.data.members %}
+{% for preset in site.data.presets %}
   <li>
-    <a href="https://github.com/{{ member.github }}">
-      {{ member.name }}
+    <a>
+      {{ preset.creator }}
     </a>
   </li>
 {% endfor %}
