@@ -7,6 +7,7 @@
 {% seo %}
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/simple-slider/1.0.0/simpleslider.min.js"></script>
     <script src="{{ '/assets/js/respond.js' | relative_url }}"></script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -45,11 +46,14 @@
             <h1>{{ preset.name | default: Preset doesn't have a name }}</h1>
             <h3>Created by: {{ preset.creator | default: Creator not specified }}</h3>
             <a>{{ preset.description | default: No description available }}</a>
-         	<br><br><div class="slider"><figure>
+         	<br><br><div style="width:612px; height:612px" data-simple-slider>
 			{% for screenshot in preset.screenshots %}
          		<img alt="Screenshot of {{preset.creator}}'s {{preset.name}}" src="{{ screenshot | default: http://ontwerpblik.nl/wp-content/uploads/404-gif.gif }}"/>
 			{% endfor %}
-			</figure></div>
+			</div>
+			<script>
+				simpleslider.getSlider();
+			</script>
            {% endfor %}
          </main>
 
