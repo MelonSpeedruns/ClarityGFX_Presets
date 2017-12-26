@@ -13,14 +13,14 @@
 body {
   margin: 0;
 }
-div#slider {
+.slider {
   overflow: hidden;
 }
-div#slider figure img {
+.slider figure img {
   width: 100%;
   float: left;
 }
-div#slider figure { 
+.slider figure { 
   position: relative;
   width: 100%;
   margin: 0;
