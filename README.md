@@ -1,6 +1,9 @@
-# Test Preset
-## Creator: MelonSpeedruns
-
-![](images/blarg.png)
-
-This preset is a test preset. blahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblah
+<ul>
+{% for member in site.data.members %}
+  <li>
+    <a href="https://github.com/{{ member.github }}">
+      {{ member.name }}
+    </a>
+  </li>
+{% endfor %}
+</ul>
