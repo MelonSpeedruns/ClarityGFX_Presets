@@ -1,3 +1,6 @@
-# A repository to find the best ClarityGFX Presets!
+# Test Preset
+##Creator: MelonSpeedruns
 
-![image-title-here](images/blarg.png){:class="img-responsive"}
+![](images/blarg.png)
+
+This preset is a test preset. blahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblah
