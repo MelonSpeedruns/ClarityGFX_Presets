@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/simple-slider/1.0.0/simpleslider.min.js"></script>
-	<script src="http://prinzhorn.github.io/0/0.js"></script>
+	<script src="https://prinzhorn.github.io/0/0.js"></script>
     <script src="{{ '/assets/js/respond.js' | relative_url }}"></script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -44,7 +44,7 @@
             <a>{{ preset.description | default: No description available }}</a>
          	<br><br><div id="slider{{preset.name | slugify}}" style="width:650px; height:366px; padding-bottom: 10%" data-simple-slider>
 			{% for screenshot in preset.screenshots %}
-         		<img alt="Screenshot of {{preset.creator}}'s {{preset.name}}" src="{{ screenshot | default: http://ontwerpblik.nl/wp-content/uploads/404-gif.gif }}"/>
+         		<a href="{{screenshot | default: http://ontwerpblik.nl/wp-content/uploads/404-gif.gif}}" rel="0"><img alt="Screenshot of {{preset.creator}}'s {{preset.name}}" src="{{ screenshot | default: http://ontwerpblik.nl/wp-content/uploads/404-gif.gif }}"/></a>
 			{% endfor %}
 			</div>
 			<script>
