@@ -42,13 +42,13 @@
             <h1>{{ preset.name | default: Preset doesn't have a name }}</h1>
             <h3>Created by: {{ preset.creator | default: Creator not specified }}</h3>
             <a>{{ preset.description | default: No description available }}</a>
-         	<br><br><div id="slider{{preset.name | handleize}}" style="width:650px; height:366px; padding-bottom: 10%" data-simple-slider>
+         	<br><br><div id="slider{{preset.name | slugify}}" style="width:650px; height:366px; padding-bottom: 10%" data-simple-slider>
 			{% for screenshot in preset.screenshots %}
          		<img alt="Screenshot of {{preset.creator}}'s {{preset.name}}" src="{{ screenshot | default: http://ontwerpblik.nl/wp-content/uploads/404-gif.gif }}"/>
 			{% endfor %}
 			</div>
 			<script>
-    			var imgSlider = simpleslider.getSlider({container: document.getElementById("slider{{preset.name | handleize}}"), prop: 'left', init: -650, show: 0, end: 650, unit: 'px'});
+    			var imgSlider = simpleslider.getSlider({container: document.getElementById("slider{{preset.name | slugify}}"), prop: 'left', init: -650, show: 0, end: 650, unit: 'px'});
 			</script>
            {% endfor %}
          </main>
