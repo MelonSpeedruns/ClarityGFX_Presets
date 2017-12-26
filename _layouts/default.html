@@ -42,11 +42,11 @@
 
         <ul>
           {% for preset in site.data.presets %}
-            <h1>{{ preset.name }}</h1>
-            <h3>Created by: {{ preset.creator }}</h3>
-            <a>{{ preset.description }}</a>
+            <h1>{{ preset.name | default: Preset doesn't have a name }}</h1>
+            <h3>Created by: {{ preset.creator | default: Creator not specified }}</h3>
+            <a>{{ preset.description | default: No description available }}</a>
          	<br><br>
-         	<img src="{{ preset.screenshot }}"/>
+         	<img alt="Screenshot of {{preset.creator}}'s {{preset.name}}" src="{{ preset.screenshot | default: http://ontwerpblik.nl/wp-content/uploads/404-gif.gif }}"/>
          	{% endfor %}
          </ul>
 
