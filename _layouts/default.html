@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/simple-slider/1.0.0/simpleslider.min.js"></script>
+	<script src="http://prinzhorn.github.io/0/0.js"></script>
     <script src="{{ '/assets/js/respond.js' | relative_url }}"></script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -22,11 +23,6 @@
       <div id="header">
         <nav>
           <li class="fork"><a href="{{ site.github.repository_url }}">View On GitHub</a></li>
-          {% if site.show_downloads %}
-            <li class="downloads"><a href="{{ site.github.zip_url }}">ZIP</a></li>
-            <li class="downloads"><a href="{{ site.github.tar_url }}">TAR</a></li>
-            <li class="title">DOWNLOADS</li>
-          {% endif %}
         </nav>
       </div><!-- end header -->
 
@@ -46,15 +42,15 @@
             <h1>{{ preset.name | default: Preset doesn't have a name }}</h1>
             <h3>Created by: {{ preset.creator | default: Creator not specified }}</h3>
             <a>{{ preset.description | default: No description available }}</a>
-         	<br><br><div style="width:650px; height:366px; padding-bottom: 10%" data-simple-slider>
+         	<br><br><div id="slider{{preset.name}}" style="width:650px; height:366px; padding-bottom: 10%" data-simple-slider>
 			{% for screenshot in preset.screenshots %}
          		<img alt="Screenshot of {{preset.creator}}'s {{preset.name}}" src="{{ screenshot | default: http://ontwerpblik.nl/wp-content/uploads/404-gif.gif }}"/>
 			{% endfor %}
 			</div>
-           {% endfor %}
 			<script>
-				simpleslider.getSlider();
+    			var imgSlider = simpleslider.getSlider({container: document.getElementById("slider{{preset.name}}"), prop: 'left', init: -650, show: 0, end: 650, unit: 'px'});
 			</script>
+           {% endfor %}
          </main>
 
       </section>
