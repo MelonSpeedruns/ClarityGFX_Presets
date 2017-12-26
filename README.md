@@ -6,6 +6,5 @@
   <br>
   <br>
     <img src="{{ preset.screenshot }}"/>
-[button url="http://www.google.com"]
 {% endfor %}
 </ul>
