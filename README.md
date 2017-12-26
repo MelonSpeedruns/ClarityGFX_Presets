@@ -1,4 +1,4 @@
-## ClarityGFX Presets
+# A repository to find the best ClarityGFX Presets!
 
 ### Clouds are over everything else
 
