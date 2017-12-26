@@ -6,6 +6,6 @@
   <br>
   <br>
     <img src="{{ preset.screenshot }}"/>
-  [Download!]({{ preset.download }}){: .btn}
+[button url="http://www.google.com"]
 {% endfor %}
 </ul>
