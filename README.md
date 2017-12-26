@@ -1,4 +1,4 @@
-## Breath of the Wild FAQ
+## ClarityGFX Presets
 
 ### Clouds are over everything else
 
