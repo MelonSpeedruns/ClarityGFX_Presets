@@ -46,7 +46,7 @@
             <h1>{{ preset.name | default: Preset doesn't have a name }}</h1>
             <h3>Created by: {{ preset.creator | default: Creator not specified }}</h3>
             <a>{{ preset.description | default: No description available }}</a>
-         	<br><br><div style="width:612px; height:612px" data-simple-slider>
+         	<br><br><div style="width:650px; height:366px" data-simple-slider>
 			{% for screenshot in preset.screenshots %}
          		<img alt="Screenshot of {{preset.creator}}'s {{preset.name}}" src="{{ screenshot | default: http://ontwerpblik.nl/wp-content/uploads/404-gif.gif }}"/>
 			{% endfor %}
