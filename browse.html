@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
 {% seo %}
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/simple-slider/1.0.0/simpleslider.min.js"></script>
+	<script src="https://prinzhorn.github.io/0/0.js"></script>
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="{{ '/assets/js/respond.js' | relative_url }}"></script>
@@ -25,7 +27,7 @@
   <body>
       <div id="header">
         <nav>
-          <li class="fork"><a href="{{ site.github.repository_url }}">View On GitHub</a></li>
+          <li class="fork"><a href="https://github.com/MelonSpeedruns/ClarityGFX_Presets">Give us some of your presets!</a></li>
         </nav>
       </div><!-- end header -->
 
@@ -33,10 +35,10 @@
 
       <section>
         <div id="title">
-          <h1>ClarityGFX Presets</h1>
-          <p>{{ site.description | default: site.github.project_tagline }}</p>
+          <h1>Clarity Presets</h1>
+          <p>"The best place to find ClarityGFX Presets."</p>
           <hr>
-          <span class="credits left">Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></span>
+          <span class="credits left">Website made by <a href="https://github.com/MelonSpeedruns">MelonSpeedruns</a> and <a href="https://github.com/Crementif">Crementif</a></span>
           <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
         </div>
 
@@ -51,16 +53,12 @@
 			{% endfor %}
 			</div>
 			<li class="downloads" style="margin: 25px 0px 60px"><a href="{{preset.download}}" style="color:white;">Download {{ preset.name }}</a></li>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/simple-slider/1.0.0/simpleslider.min.js"></script>
-			<script src="https://prinzhorn.github.io/0/0.js"></script>
 			<script>
     			var imgSlider = simpleslider.getSlider({container: document.getElementById("slider{{preset.name | slugify}}"), show: 0, delay: 6});
 			</script>
            {% endfor %}
          </main>
-
       </section>
-
 	  </div>
   </body>
 </html>
